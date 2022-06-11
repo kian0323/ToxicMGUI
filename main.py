@@ -5,7 +5,7 @@ from discord import file
 from discord.utils import get
 import os
 
-client = commands.Bot(command_prefix='t;')
+client = commands.Bot(command_prefix='H:')
 
 @client.command()
 @commands.has_role(961786025762512947)
@@ -47,7 +47,7 @@ async def delete(ctx, user: discord.User):
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game('Toxic MGUI | Token Generator'))
+    await client.change_presence(activity=discord.Game('RBXHeaven MGUI | Token Generator'))
 
 @client.event
 async def on_command_error(ctx, error):
