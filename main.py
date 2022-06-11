@@ -8,7 +8,7 @@ import os
 client = commands.Bot(command_prefix='H:')
 
 @client.command()
-@commands.has_role(961786025762512947)
+@commands.has_role("Owner")
 async def generate(ctx, user: discord.User):
     
     disc = user.id
@@ -29,7 +29,7 @@ async def generate(ctx, user: discord.User):
         
         
 @client.command()
-@commands.has_role(961786025762512947)
+@commands.has_role("Owner")
 async def delete(ctx, user: discord.User):
     
     disc = user.id
