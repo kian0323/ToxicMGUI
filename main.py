@@ -5,7 +5,7 @@ from discord import file
 from discord.utils import get
 import os
 
-client = commands.Bot(command_prefix='H:')
+client = commands.Bot(command_prefix='.')
 
 @client.command()
 @commands.has_role("Owner")
@@ -13,7 +13,7 @@ async def generate(ctx, user: discord.User):
     
     disc = user.id
     
-    url = requests.get(f"https://toxicmgui4.x10.mx/generate.php?disc={disc}")
+    url = requests.get(f"https://www.astro45hardfind.x10.mx/generate.php?disc={disc}")
     
     generate = url.text
     
@@ -34,7 +34,7 @@ async def delete(ctx, user: discord.User):
     
     disc = user.id
     
-    url = requests.get(f"https://toxicmgui4.x10.mx/delete.php?disc={disc}")
+    url = requests.get(f"https://www.astro45hardfind.x10.mx/delete.php?disc={disc}")
     
     generate = url.text
     
